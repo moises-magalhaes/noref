@@ -13,15 +13,7 @@ body {
   position: relative;
 }
 
-.bg-primary::before {
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.bg-secondary::before {
+.bg-primary::before, .bg-secondary::before{
   content: "";
   top: 0;
   left: 0;
@@ -53,18 +45,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(areas);
-}
-
-.bg-areas::before, {
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(publications);
 }
 
 button.bg-primary {
   background-image: none;
 }
+
+
+@media (max-width: 767px) {
+    #search::placeholder {
+      visibility: hidden;
+    }
+  }
