@@ -1,0 +1,70 @@
+html,
+body {
+  font-family: "PT Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.bg-primary,
+.bg-secondary, 
+.bg-areas, .bg-publications {
+  background-image: url("../../public/assets/images/svgbg-ind.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-primary::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg-secondary::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg-areas, .bg-publications{
+  height: 8rem;
+}
+
+.bg-areas h1:before, .bg-publications h1:before  {
+    background-color: hsla(0,0%,97.6%,.5);
+    border-radius: 5px;
+    content: "";
+    height: 3px;
+    left: -100%;
+    margin-left: .95rem;
+    position: absolute;
+    top: auto;
+    min-width: 100%;
+    width: 100px;
+    margin-top: 1rem;
+}
+
+.bg-areas::before, {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(areas);
+}
+
+.bg-areas::before, {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(publications);
+}
+
+button.bg-primary {
+  background-image: none;
+}
