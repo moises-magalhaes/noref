@@ -19,16 +19,21 @@
             <a href="./index.html" class="-m-1.5 p-1.5">
               <span class="sr-only">NOREF</span>
               <img
-                class="h-8 w-auto"
+                class="h-8 w-auto hidden lg:block"
                 src="./assets/images/noref-logo_text.svg"
+                alt="noref-logo_text"
+              />
+              <img
+                class="h-8 w-auto block lg:hidden"
+                src="./assets/images/NOREF-mobile-logo.svg"
                 alt="noref-logo_text"
               />
             </a>
           </div>
-          <div class="flex flex-wrap lg:hidden">
-            <div
-              type="div"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          <div class="flex flex-wrap lg:hidden order-last justify-end">
+            <button
+              type="button"
+              class="-m-2.5 flex-col items-center justify-center rounded-md p-2.5 text-gray-700"
             >
               <span class="sr-only">Open Main menu</span>
               <svg
@@ -45,16 +50,17 @@
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
-            </div>
+              <p class="text-black justify-center text-sm">Menu</p>
+            </button>
           </div>
 
-          <div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
-            <div class="max-w-lg w-full lg:max-w-xs">
+          <div class="flex-1 flex justify-end px-2 lg:ml-6">
+            <div class="max-w-[50px] w-full lg:max-w-xs">
               <label for="search" class="sr-only">Search</label>
               <div class="relative">
                 <input
                   id="search"
-                  class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
+                  class="block w-full pl-10 pr-3 py-2 lg:border lg:border-gray-300 rounded-md leading-5 bg-white lg:placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
                   placeholder="Search"
                   type="search"
                 />
@@ -78,28 +84,30 @@
           </div>
         </div>
         <div
-          class="flex lg:flex lg:gap-x-12 flex-1 justify-center px-2 py-3 lg:ml-6 lg:justify-end"
+          class="flex flex-col lg:flex-row lg:gap-x-12 flex-1 justify-center px-2 py-3 lg:ml-6 lg:justify-end"
         >
-          <a
-            href="./work-areas.html"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 active"
-            >Work areas</a
-          >
-          <a
-            href="./publications.html"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
-            >Publications</a
-          >
-          <a
-            href="./methods.html"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
-            >NOREF methods</a
-          >
-          <a
-            href="./about.html"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
-            >About NOREF</a
-          >
+          <div class="hidden lg:flex space-x-12">
+            <a
+              href="./work-areas.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 active"
+              >Work areas</a
+            >
+            <a
+              href="./publications.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              >Publications</a
+            >
+            <a
+              href="./methods.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              >NOREF methods</a
+            >
+            <a
+              href="./about.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              >About NOREF</a
+            >
+          </div>
         </div>
       </nav>
     </header>
@@ -251,7 +259,30 @@
       <div
         class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
       >
-        <div class="flex justify-center space-x-6 md:order-2">
+        <div class="mt-8 order-1 md:mt-0">
+          <p class="text-start text-xs leading-5 text-gray-500">
+            NOREF Norwegian Centre for Conflict Resolution | Web editor: Håkon
+            Repstad
+          </p>
+          <div class="flex flex-col lg:flex-row mb-4">
+            <a
+              href="#"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 lg:mr-4"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 lg:mr-4"
+              >Permission</a
+            >
+            <a
+              href="#"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8"
+              >Contact us</a
+            >
+          </div>
+        </div>
+        <div class="flex justify-center space-x-6 order order-2">
           <a href="#" class="flex gap-x-2 ext-fiord-800 hover:text-fiord-500">
             <span class="sr-only">Facebook</span>
 
@@ -300,28 +331,6 @@
             </svg>
             <p>Linkedin</p>
           </a>
-        </div>
-        <div class="mt-8 md:order-1 md:mt-0">
-          <p class="text-center text-xs leading-5 text-gray-500">
-            NOREF Norwegian Centre for Conflict Resolution | Web editor: Håkon
-            Repstad
-          </p>
-
-          <a
-            href="#"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
-            >Privacy Policy</a
-          >
-          <a
-            href="#"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
-            >Permission</a
-          >
-          <a
-            href="#"
-            class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
-            >Contact us</a
-          >
         </div>
       </div>
     </footer>
