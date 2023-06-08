@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../../src/styles/style.css" rel="stylesheet" />
+
+    <title>Noref</title>
+  </head>
+
+  <body>
+    <!-----------------------------------------------header--------------------------------------->
+
+    <header class="bg-white-50">
+      <nav class="mx-auto block max-w-7xl p-6 lg:px-8">
+        <div class="flex">
+          <div class="flex lg:flex-1">
+            <a href="../index.html" class="-m-1.5 p-1.5">
+              <span class="sr-only">NOREF</span>
+              <img
+                class="h-8 w-auto hidden lg:block"
+                src="../assets/images/noref-logo_text.svg"
+                alt="noref-logo_text"
+              />
+              <img
+                class="h-8 w-auto block lg:hidden"
+                src="../assets/images/NOREF-mobile-logo.svg"
+                alt="noref-logo_text"
+              />
+            </a>
+          </div>
+          <div class="flex flex-wrap lg:hidden order-last justify-end">
+            <button
+              type="button"
+              class="-m-2.5 flex-col items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open Main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <p class="text-black justify-center text-sm">Menu</p>
+            </button>
+          </div>
+
+          <div class="flex-1 flex justify-end px-2 lg:ml-6">
+            <div class="max-w-[50px] w-full lg:max-w-xs">
+              <label for="search" class="sr-only">Search</label>
+              <div class="relative">
+                <input
+                  id="search"
+                  class="block w-full pl-10 pr-3 py-2 lg:border lg:border-gray-300 rounded-md leading-5 bg-white lg:placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
+                  placeholder="Search"
+                  type="search"
+                />
+                <div
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <svg
+                    class="h-8 w-8 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.5 15a6.5 6.5 0 1 1 5.697-3.384l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387A6.472 6.472 0 0 1 8.5 15zm0-11a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row lg:gap-x-12 flex-1 justify-center px-2 py-3 lg:ml-6 lg:justify-end"
+        >
+          <div class="hidden lg:flex space-x-12">
+            <a
+              href="../work-areas.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              >Work areas</a
+            >
+            <a
+              href="../publications.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              >Publications</a
+            >
+            <a
+              href="../methods.html"
+              class="ext-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              >NOREF methods</a
+            >
+            <a
+              href="../about.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 active"
+              >About NOREF</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-----------------------------------------------body--------------------------------------->
+
+    <section class="bg-primary bg-fern-frond-600">
+      <div class="bg-white-50 bg-opacity-10 w-full">
+        <div
+          class="mx-auto max-w-7xl px-6 py-2 md:flex md:items-center md:justify-between lg:px-8 relative"
+        >
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+              <li class="inline-flex items-center">
+                <a
+                  href="../index.html"
+                  class="inline-flex items-center text-sm font-medium text-white-50"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="w-4 h-4 mr-2 text-white-50"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    class="w-6 h-6 text-white-50"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <a
+                    href="../about.html"
+                    class="ml-1 text-sm font-medium text-white-50 md:ml-2"
+                    >About NOREF</a
+                  >
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div
+        class="mx-auto max-w-7xl px-6 py-4 md:flex md:items-center md:justify-between lg:px-8 relative"
+      >
+        <h1 class="text-2xl tracking-tight text-white-50 sm:text-4xl text-left">
+          About NOREF
+        </h1>
+      </div>
+    </section>
+
+    <section class="">
+      <div
+        class="mx-auto max-w-7xl px-4 sm:py-5 lg:py-10 flex flex-row sm:px-6 lg:px-8 gap-8 flex-wrap"
+      >
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="text-black text-left inline-flex gap-4 lg:w-1/3 flex-grow">
+          <img src="../assets/images/Dag-Nylander.jpg" alt="director" />
+          <div>
+            <h2
+              class="text-xl tracking-tight sm:text-3x underline underline-offset-4 decoration-fiord-200"
+            >
+              Dag Nylander
+            </h2>
+            <p class="py-4"><strong>Director</strong></p>
+            <span class="flex gap-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-ui-48px-outline-1-email-85 color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-ui-48px-outline-1-email-85"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m99 157c-4-4-4-11 0-15 4-4 11-4 15 0l142 142 142-142c4-4 11-4 15 0 4 4 4 11 0 15l-150 149c-2 2-4 3-7 3-3 0-5-1-7-3z m402-93l0 384c0 6-4 11-10 11l-470 0c-6 0-10-5-10-11l0-384c0-6 4-11 10-11l470 0c6 0 10 5 10 11z m-21 11l-448 0 0 362 448 0z m-373 298c3 0 5-1 7-3l43-43c4-4 4-10 0-14-4-5-11-5-15 0l-43 42c-4 4-4 11 0 15 2 2 4 3 8 3z m263-60c-4-5-11-5-15 0-4 4-4 10 0 14l43 43c2 2 5 3 7 3 2 0 6-1 8-3 4-4 4-11 0-15z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-ui-48px-outline-1-email-85"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="mailto:dag.nylander@noref.no"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >dag.nylander@noref.no</a
+              >
+            </span>
+
+            <span class="flex gap-4 pt-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-tech-48px-outline-mobile-button color--blue--60"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="icon-tech-48px-outline-mobile-button"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="m373 11l-234 0c-30 0-54 23-54 53l0 384c0 30 24 53 54 53l234 0c30 0 54-23 54-53l0-384c0-30-24-53-54-53z m32 437c0 18-14 32-32 32l-234 0c-18 0-32-14-32-32l0-96 298 0z m0-117l-298 0 0-214 298 0z m-298-235l0-32c0-18 14-32 32-32l234 0c18 0 32 14 32 32l0 32z m128 320c0-12 9-21 21-21 12 0 21 9 21 21 0 12-9 21-21 21-12 0-21-9-21-21z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <use
+                  xlink:href="#icon-tech-48px-outline-mobile-button"
+                  fill="#8492A6"
+                ></use>
+              </svg>
+              <a
+                href="tel:+47 976 97 477"
+                class="underline underline-offset-4 decoration-fiord-200"
+                >+47 976 97 477</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------------------footer--------------------------------------->
+    <footer class="bg-white">
+      <div
+        class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
+      >
+        <div class="mt-8 order-1 md:mt-0">
+          <p class="text-start text-xs leading-5 text-gray-500">
+            NOREF Norwegian Centre for Conflict Resolution | Web editor: Håkon
+            Repstad
+          </p>
+          <div class="flex flex-col lg:flex-row mb-4">
+            <a
+              href="#"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 lg:mr-4"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 lg:mr-4"
+              >Permission</a
+            >
+            <a
+              href="#"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8"
+              >Contact us</a
+            >
+          </div>
+        </div>
+        <div class="flex justify-center space-x-6 order order-2">
+          <a href="#" class="flex gap-x-2 ext-fiord-800 hover:text-fiord-500">
+            <span class="sr-only">Facebook</span>
+
+            <svg
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p>Facebook</p>
+          </a>
+          <a href="#" class="flex gap-x-2 text-fiord-800 hover:text-fiord-500">
+            <span class="sr-only">Twitter</span>
+
+            <svg
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+            <p>Twitter</p>
+          </a>
+          <a href="#" class="flex gap-x-2 text-fiord-800 hover:text-fiord-500">
+            <span class="sr-only">Linkedin</span>
+
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.535,2H3.465C2.63,2,2,2.629,2,3.465v17.07C2,21.371,2.629,22,3.465,22h17.07C21.371,22,22,21.371,22,20.535v-17.07C22,2.629,21.371,2,20.535,2zM8.549,19H5.211V9.2h3.338V19zM6.881,7.971c-1.019,0-1.846-0.826-1.846-1.845s0.827-1.845,1.846-1.845S8.727,4.106,8.727,5.125S7.9,7.971,6.881,7.971zM19,19h-3.337v-5.773c0-1.372-0.026-3.134-1.91-3.134c-1.91,0-2.201,1.492-2.201,3.032V19h-3.337V9.2h3.176v1.615h0.045c0.443-0.838,1.524-1.721,3.135-1.721c3.34,0,3.954,2.201,3.954,5.061V19z"
+              />
+            </svg>
+            <p>Linkedin</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

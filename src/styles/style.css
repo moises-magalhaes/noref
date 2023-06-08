@@ -60,6 +60,14 @@ grid-template-columns: 1fr;
 background-color:#eee;
 }
 
+.decoration-fiord-200{
+  text-decoration-line: underline;
+  text-decoration-color:#d3d9e4 !important;
+}
+.gap-8 {
+  gap: 2rem;
+}
+
 @media (max-width: 767px) {
     #search::placeholder {
       visibility: hidden;
