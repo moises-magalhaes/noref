@@ -51,9 +51,23 @@ button.bg-primary {
   background-image: none;
 }
 
+.grid {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.bg-fiord-200{
+background-color:#eee;
+}
 
 @media (max-width: 767px) {
     #search::placeholder {
       visibility: hidden;
+    }
+  }
+
+  @media (min-width: 768px){
+    .grid {
+    grid-template-columns: 3fr 1fr;
     }
   }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link href="../../src/styles/style.css" rel="stylesheet" />
+    <link href="../src/styles/style.css" rel="stylesheet" />
 
     <title>Noref</title>
   </head>
@@ -17,16 +17,16 @@
       <nav class="mx-auto block max-w-7xl p-6 lg:px-8">
         <div class="flex">
           <div class="flex lg:flex-1">
-            <a href="../" class="-m-1.5 p-1.5">
+            <a href="./index.html" class="-m-1.5 p-1.5">
               <span class="sr-only">NOREF</span>
               <img
                 class="h-8 w-auto hidden lg:block"
-                src="../assets/images/noref-logo_text.svg"
+                src="./assets/images/noref-logo_text.svg"
                 alt="noref-logo_text"
               />
               <img
                 class="h-8 w-auto block lg:hidden"
-                src="../assets/images/NOREF-mobile-logo.svg"
+                src="./assets/images/NOREF-mobile-logo.svg"
                 alt="noref-logo_text"
               />
             </a>
@@ -89,23 +89,23 @@
         >
           <div class="hidden lg:flex space-x-12">
             <a
-              href="../work-areas"
+              href="./work-areas.html"
               class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
               >Work areas</a
             >
             <a
-              href="../publications"
+              href="./publications.html"
               class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
               >Publications</a
             >
             <a
-              href="./methods"
-              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8"
+              href="../methods.html"
+              class="ext-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
               >NOREF methods</a
             >
             <a
-              href="../about"
-              class="text-sm font-semibold leading-6 text-black-300 decoration-2 hover:underline hover:underline-offset-8"
+              href="./about.html"
+              class="text-sm font-semibold leading-6 text-black-300 decoration-2 underline underline-offset-8 active"
               >About NOREF</a
             >
           </div>
@@ -115,7 +115,7 @@
 
     <!-----------------------------------------------body--------------------------------------->
 
-    <section class="bg-publications bg-wine-berry-900">
+    <section class="bg-primary bg-fern-frond-600">
       <div class="bg-white-50 bg-opacity-10 w-full">
         <div
           class="mx-auto max-w-7xl px-6 py-2 md:flex md:items-center md:justify-between lg:px-8 relative"
@@ -129,7 +129,7 @@
                 >
                   <svg
                     aria-hidden="true"
-                    class="w-4 h-4 mr-2"
+                    class="w-4 h-4 mr-2 text-white-50"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@
                   <a
                     href="./work-areas.html"
                     class="ml-1 text-sm font-medium text-white-50 md:ml-2"
-                    >Work areas</a
+                    >About NOREF</a
                   >
                 </div>
               </li>
@@ -170,32 +170,135 @@
         class="mx-auto max-w-7xl px-6 py-4 md:flex md:items-center md:justify-between lg:px-8 relative"
       >
         <h1 class="text-2xl tracking-tight text-white-50 sm:text-4xl text-left">
-          NOREF methods
+          About NOREF
         </h1>
       </div>
     </section>
 
-    <section>
+    <section class="">
       <div
         class="mx-auto max-w-7xl px-4 sm:py-5 lg:py-10 flex flex-col sm:px-6 lg:px-8"
       >
-        <div class="flex flex-col md:flex-row">
+        <!-- <div class="w-full"> -->
+        <div class="flex flex-wrap">
           <button
-            class="text-black bg-white border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 text-center inline-flex items-center"
+            class="text-black bg-white-50 border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 text-center inline-flex items-center w-full lg:w-1/4 m-2 flex-grow"
           >
-            Track One
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-files-48px-outline-search color--blue--60"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="icon-files-48px-outline-search"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="m53 11l0 490 406 0 0-490z m384 469l-362 0 0-448 362 0z m-202-171c19 0 37-6 52-18l58 58 14-15-57-58c12-15 18-33 18-52 0-47-38-85-85-85-47 0-86 38-86 85 0 47 39 85 86 85z m0-149c35 0 64 29 64 64 0 35-29 64-64 64-36 0-64-29-64-64 0-35 28-64 64-64z"
+                  ></path>
+                </symbol>
+              </defs>
+              <use
+                xlink:href="#icon-files-48px-outline-search"
+                fill="#8492A6"
+              ></use>
+            </svg>
+            Vacancies
           </button>
           <button
-            class="text-black bg-white border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 ml-2 text-center inline-flex items-center"
+            class="text-black bg-white border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 ml-2 text-center inline-flex items-center w-full lg:w-1/4 m-2 flex-grow"
           >
-            Track Two
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-text-48px-outline-capitalize color--blue--60"
+              width="24"
+              height="24"
+              style="margin-right: 2px"
+            >
+              <defs>
+                <symbol
+                  id="icon-text-48px-outline-capitalize"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="m501 32l0 21-234 0 0-21z m-234 128l234 0 0-21-234 0z m-256 107l490 0 0-22-490 0z m0 106l490 0 0-21-490 0z m0 107l490 0 0-21-490 0z m64-288l-64 0 0-21 24 0 64-150 35 0 64 150 26 0 0 21-64 0 0-21 16 0-18-43-81 0-18 43 16 0z m11-85l62 0-27-64-8 0z"
+                  ></path>
+                </symbol>
+              </defs>
+              <use
+                xlink:href="#icon-text-48px-outline-capitalize"
+                fill="#8492A6"
+              ></use>
+            </svg>
+
+            News
           </button>
           <button
-            class="text-black bg-white border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 ml-2 text-center inline-flex items-center"
+            class="text-black bg-white border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 ml-2 text-center inline-flex items-center w-full lg:w-1/4 m-2 flex-grow"
           >
-            Specialized support
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-users-48px-outline-2-meeting color--blue--60"
+              width="24"
+              height="24"
+              style="margin-right: 2px"
+            >
+              <defs>
+                <symbol
+                  id="icon-users-48px-outline-2-meeting"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="m186 427c-47-14-92-14-137 0-23 6-38 26-38 51l0 23 213 0 0-23c0-25-15-45-38-51z m17 53l-171 0 0-2c0-14 10-27 22-31 42-13 81-13 125 0 14 4 24 16 24 31z m-86-85c36 0 64-29 64-64 0-36-28-64-64-64-35 0-64 28-64 64 0 35 29 64 64 64z m0-107c24 0 43 19 43 43 0 23-19 42-43 42-23 0-42-19-42-42 0-24 19-43 42-43z m346 139c-47-14-92-14-137 0-22 6-38 27-38 51l0 23 213 0 0-23c0-25-15-45-38-51z m17 53l-171 0 0-2c0-14 10-27 24-31 41-13 81-13 125 0 13 4 23 16 23 31l0 2z m-149-149c0 35 28 64 64 64 35 0 64-29 64-64 0-36-29-64-64-64-36 0-64 28-64 64z m64-43c23 0 42 19 42 43 0 23-19 42-42 42-24 0-43-19-43-42 0-24 19-43 43-43z m-32-66c0-24-15-45-39-51-47-14-91-14-136 0-23 6-39 27-39 51l0 23 214 0z m-22 2l-170 0 0-2c0-14 9-27 22-31 42-13 81-13 125 0 14 4 23 16 23 31z m-85-85c35 0 64-29 64-64 0-36-29-64-64-64-35 0-64 28-64 64 0 35 29 64 64 64z m0-107c23 0 43 19 43 43 0 23-20 42-43 42-23 0-43-19-43-42 0-24 20-43 43-43z"
+                  ></path>
+                </symbol>
+              </defs>
+              <use
+                xlink:href="#icon-users-48px-outline-2-meeting"
+                fill="#8492A6"
+              ></use>
+            </svg>
+
+            the board
+          </button>
+
+          <button
+            class="text-black bg-white border border-gray hover:border-black focus:outline-none focus:ring-blue font-medium rounded-md text-sm px-4 py-2.5 my-4 ml-2 text-center inline-flex items-center w-full lg:w-1/4 m-2 flex-grow lg:max-w-[389px]"
+          >
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-users-48px-outline-multiple-11 color--blue--60"
+              width="24"
+              height="24"
+              style="margin-right: 2px"
+            >
+              <defs>
+                <symbol
+                  id="icon-users-48px-outline-multiple-11"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="m96 149c30 0 53-23 53-53 0-30-23-53-53-53-30 0-53 23-53 53 0 30 23 53 53 53z m0-85c18 0 32 14 32 32 0 18-14 32-32 32-18 0-32-14-32-32 0-18 14-32 32-32z m320 85c30 0 53-23 53-53 0-30-23-53-53-53-30 0-53 23-53 53 0 30 23 53 53 53z m0-85c18 0 32 14 32 32 0 18-14 32-32 32-18 0-32-14-32-32 0-18 14-32 32-32z m32 117l-64 0c-15 0-29 7-39 17-8-4-15-6-25-6l-128 0c-10 0-17 2-25 6-9-10-24-17-39-17l-64 0c-30 0-53 24-53 54l0 103 33 11 10 120 74 0 0-21-54 0-11-114-31-11 0-88c0-18 14-32 32-32l64 0c9 0 17 3 22 9-7 9-11 21-11 33l0 116 43 10 11 130 126 0 11-130 43-10 0-116c0-12-4-24-11-33 6-6 13-9 22-9l64 0c18 0 32 14 32 32l0 88-31 11-11 114-54 0 0 21 74 0 10-120 33-11 0-103c0-30-23-54-53-54z m-96 162l-42 11-10 126-88 0-10-126-42-11 0-98c0-18 14-32 32-32l128 0c18 0 32 14 32 32z m-96-183c42 0 75-33 75-75 0-41-33-74-75-74-42 0-75 33-75 74 0 42 33 75 75 75z m0-128c30 0 53 23 53 53 0 30-23 54-53 54-30 0-53-24-53-54 0-30 23-53 53-53z"
+                  ></path>
+                </symbol>
+              </defs>
+              <use
+                xlink:href="#icon-users-48px-outline-multiple-11"
+                fill="#8492A6"
+              ></use>
+            </svg>
+
+            Staff
           </button>
         </div>
+        <!-- </div> -->
+
         <p class="flex self-start max-w-xl">
           Today's armed conflicts are marked by multiple armed actors, state
           fragmentation, and the withering of state and security systems and
